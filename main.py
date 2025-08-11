@@ -6,7 +6,7 @@ import math
 pygame.init()
 score = 0
 score_record = 0
-manger_song = pygame.mixer.Sound("snake/TOONPop_Bulles eclatent (ID 1074)_LS.wav")
+manger_song = pygame.mixer.Sound("TOONPop_Bulles.wav")
 
 
 class Start_point:
