@@ -49,7 +49,6 @@ class Snake:
         self.direction = "RIGHT"
 
 
-
 class Block:
     def __init__(self, x_pos, y_pos):
         self.x = x_pos
@@ -168,16 +167,16 @@ while game_on:
             game.update()
 
         if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_z:
+            if event.key == pygame.K_UP:
                 if game.snake.direction != "DOWN":
                     game.snake.direction = "TOP"
-            if event.key == pygame.K_s:
+            if event.key == pygame.K_DOWN:
                 if game.snake.direction != "TOP":
                     game.snake.direction = "DOWN"
-            if event.key == pygame.K_d:
+            if event.key == pygame.K_RIGHT:
                 if game.snake.direction != "LEFT":
                     game.snake.direction = "RIGHT"
-            if event.key == pygame.K_q:
+            if event.key == pygame.K_LEFT:
                 if game.snake.direction != "RIGHT":
                     game.snake.direction = "LEFT"
 
